@@ -1,5 +1,5 @@
 # tests status
-[![auto_build](https://github.com/polinavinograd/courses/actions/workflows/main.yml/badge.svg?branch=main&event=push)](https://github.com/polinavinograd/courses/actions/workflows/main.yml)
+[![auto_build](https://github.com/polinavinograd/courses/actions/workflows/main.yml/badge.svg?branch=main&event=push)](https://github.com/polinavinograd/courses/actions/workflows/main.yml/badge.svg)
 
 ![example workflow](https://github.com/github/docs/actions/workflows/main.yml/badge.svg)
 
