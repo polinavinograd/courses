@@ -1,0 +1,29 @@
+name: auto_build
+on: push
+jobs:
+  build_project:
+    runs-on: manjaro-latest
+    steps:
+      - name: Get repository code
+        uses: actions/checkout@v3
+      - name: build 1
+        run: |
+          cd 01/1
+          mkdir build 
+          cd build 
+          cmake .. 
+          cmake  --build .
+      - name: build 2
+        run: |
+          cd 01/2/dynamic
+          mkdir build 
+          cd build 
+          cmake .. 
+          cmake  --build .
+      - name: build 3
+        run: |
+          cd 01/2/static
+          mkdir build 
+          cd build 
+          cmake .. 
+          cmake  --build .
