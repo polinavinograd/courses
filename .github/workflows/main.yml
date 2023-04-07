@@ -1,8 +1,8 @@
-name: build
+name: Ubuntu-build
 on: push
 jobs:
   build_project:
-    runs-on: manjaro-latest
+    runs-on: ubuntu-latest
     steps:
       - name: Get repository code
         uses: actions/checkout@v1
