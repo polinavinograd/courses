@@ -1,4 +1,4 @@
-name: auto_build
+name: Ubuntu-build
 on: push
 jobs:
   build_project:
