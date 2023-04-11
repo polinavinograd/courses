@@ -1,7 +1,11 @@
 cmake_minimum_required(VERSION 3.20)
 
+set(CMAKE_BUILD_TYPE Debug)
+
 if(CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_CURRENT_BINARY_DIR)
-  message(FATAL_ERROR "Please create a build directory outside of the source code")
+    message(
+        FATAL_ERROR "Please create a build directory outside of the source code"
+        )
 endif()
 
 project(sdl-shared CXX)

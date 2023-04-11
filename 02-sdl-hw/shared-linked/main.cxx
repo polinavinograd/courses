@@ -4,7 +4,7 @@
 #include <SDL3/SDL_version.h>
 
 int main() {
-  SDL_version compiled = {0, 0, 0};
+  SDL_version compiled = {};
   SDL_version linked = {};
 
   const int link_ver = SDL_GetVersion(&linked);
