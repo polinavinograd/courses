@@ -12,8 +12,3 @@ patchelf --replace-needed old-so-lib.so new_so_lib.so executable_filename - chan
 
 # gdb use
 "-" shows code fragment where the debugger stopped
-
-libSDL2-2.0.so.0
-
-/usr/local/lib/libSDL2-2.0d.so.0
-libSDL3.so.0
