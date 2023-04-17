@@ -10,12 +10,9 @@ endif()
 
 project(sdl-shared CXX)
 
-file(
-    GLOB
-    CXX_SRC
-    =
-    "*.cxx")
+file(GLOB CXX_SRC "*.cxx")
 add_executable(${PROJECT_NAME} ${CXX_SRC})
+message("${CXX_SRC}")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++1y")
 add_definitions(-Wall -O2)
 

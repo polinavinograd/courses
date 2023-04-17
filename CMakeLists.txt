@@ -6,3 +6,4 @@ project(courses CXX)
 
 add_subdirectory(01)
 add_subdirectory(02-sdl-hw)
+add_subdirectory(03-sdl-engine-hw)
