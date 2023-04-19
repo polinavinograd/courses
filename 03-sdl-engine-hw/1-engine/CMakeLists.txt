@@ -15,7 +15,7 @@ add_definitions(-O2)
 find_package(SDL3 REQUIRED)
 find_package(SDL3_image REQUIRED)
 add_library(${PROJECT_NAME}_lib STATIC engine.cxx engine.hxx texture.hxx)
-target_link_libraries(${PROJECT_NAME}_lib PRIVATE SDL3::SDL3-shared
+target_link_libraries(${PROJECT_NAME}_lib PRIVATE SDL3::SDL3
                                                   SDL3_image::SDL3_image)
 target_include_directories(${PROJECT_NAME}_lib PUBLIC CMAKE_CURRENT_SOURCE_DIR)
 

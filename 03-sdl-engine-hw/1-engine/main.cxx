@@ -6,7 +6,7 @@
 int main(int argc, char* argv[]) {
   std::unique_ptr<engine> engine = engine_builder::create_engine();
 
-  texture image = engine->create_texture_from_file("/home/polinavngrd/Projects/courses/03-sdl-engine-hw/engine-1/chelik.png");
+  texture image = engine->create_texture_from_file("03-sdl-engine-hw/1-engine/chelik.png");
 
   bool quit = false;
   while (!quit) {

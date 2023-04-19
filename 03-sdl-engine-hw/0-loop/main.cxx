@@ -44,7 +44,7 @@ int main(int argc, char* argv[]) {
   SDL_RenderClear(renderer);
 
   IMG_Init(IMG_INIT_PNG);
-  SDL_RWops* io = SDL_RWFromFile("../../../03-sdl-engine-hw/loop/chelik.png", "rb");
+  SDL_RWops* io = SDL_RWFromFile("03-sdl-engine-hw/0-loop/chelik.png", "rb");
   if (!io) {
     SDL_Log("Unable to read file: %s", SDL_GetError());
     SDL_DestroyRW(io);
