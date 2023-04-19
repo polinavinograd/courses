@@ -1,11 +1,3 @@
-#include <SDL3/SDL_image.h>
-#include <SDL3/SDL_init.h>
-#include <SDL3/SDL_render.h>
-#include <SDL3/SDL_rwops.h>
-#include <SDL3/SDL_stdinc.h>
-#include <SDL3/SDL_surface.h>
-#include <SDL3/SDL_timer.h>
-#include <SDL3/SDL_video.h>
 #include <memory>
 #include <ostream>
 #include <string>
@@ -13,6 +5,7 @@
 
 #include "engine.hxx"
 #include <SDL3/SDL.h>
+#include <SDL3/SDL_image.h>
 
 std::ostream& operator<<(std::ostream& out, event e) {
   out << event_names.at(e);

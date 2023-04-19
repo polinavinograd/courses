@@ -1,11 +1,3 @@
-#include <SDL3/SDL_image.h>
-#include <SDL3/SDL_init.h>
-#include <SDL3/SDL_render.h>
-#include <SDL3/SDL_rwops.h>
-#include <SDL3/SDL_stdinc.h>
-#include <SDL3/SDL_surface.h>
-#include <SDL3/SDL_timer.h>
-#include <SDL3/SDL_video.h>
 #include <memory>
 #include <ostream>
 #include <string>
@@ -13,6 +5,7 @@
 
 #include "engine.hxx"
 #include <SDL3/SDL.h>
+#include <SDL3/SDL_image.h>
 
 std::ostream& operator<<(std::ostream& out, event e) {
   out << event_names.at(e);
@@ -94,25 +87,25 @@ void engine::system_deinit() {
     this->objs->windows.clear();
   }
   if (this->objs->renderers.size() != 0) {
-    for (auto& renderer: objs->renderers) {
+    for (auto& renderer : objs->renderers) {
       SDL_DestroyRenderer(renderer);
     }
     this->objs->renderers.clear();
   }
   if (this->objs->surfaces.size() != 0) {
-    for (auto &surface : objs->surfaces) {
+    for (auto& surface : objs->surfaces) {
       SDL_DestroySurface(surface);
     }
     this->objs->surfaces.clear();
   }
   if (this->objs->textures.size() != 0) {
-    for (auto &texture : objs->textures) {
+    for (auto& texture : objs->textures) {
       SDL_DestroyTexture(texture);
     }
     this->objs->textures.clear();
   }
   if (this->objs->rwops.size() != 0) {
-    for (auto &rwop : objs->rwops) {
+    for (auto& rwop : objs->rwops) {
       SDL_DestroyRW(rwop);
     }
     this->objs->rwops.clear();
