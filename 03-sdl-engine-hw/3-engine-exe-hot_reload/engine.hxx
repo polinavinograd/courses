@@ -5,6 +5,8 @@
 
 #include "texture.hxx"
 
+namespace my {
+
 enum class event {
   left_pressed,
   left_released,
@@ -75,6 +77,7 @@ struct game {
     virtual ~game() = default;
     virtual void init(engine* eng) = 0;
     virtual void update() = 0;
-    virtual void on_event() = 0;
+    virtual void on_event(event e, bool& quit) = 0;
     virtual void render() const = 0;
 };
+} // namespace my

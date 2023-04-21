@@ -3,7 +3,7 @@
 #include <vector>
 
 #include <SDL3/SDL.h>
-
+namespace my {
 class texture {
   private:
     SDL_Texture* text;
@@ -25,3 +25,4 @@ struct sdl_obj {
     SDL_Texture* textures;
     SDL_RWops* rwops;
 };
+} // namespace my
