@@ -1,8 +1,0 @@
-[
-{
-  "directory": "/home/polinavngrd/Projects/courses/build/Clang 15.0.7 x86_64-pc-linux-gnu/Debug",
-  "command": "/usr/bin/clang++ -g -std=gnu++17 -o CMakeFiles/hello_world.dir/hello_world.cxx.o -c /home/polinavngrd/Projects/courses/01/1/hello_world.cxx",
-  "file": "/home/polinavngrd/Projects/courses/01/1/hello_world.cxx",
-  "output": "CMakeFiles/hello_world.dir/hello_world.cxx.o"
-}
-]
